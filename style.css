@@ -75,7 +75,7 @@ header ul li a
 {
     position: relative;
     max-width: 600px;
-    z-index: 1;
+    z-index: 2;
     margin-right: 20px;
 }
 .content .textBox h2
@@ -102,4 +102,27 @@ header ul li a
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+}
+.content .imgBox
+{
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .imgBox::before
+{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: var(--green);
+    border-radius: 50%;
+}
+.content .imgBox img
+{
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
 }
