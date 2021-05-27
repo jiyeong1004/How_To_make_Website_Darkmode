@@ -161,3 +161,22 @@ header ul li a
 {
     background: var(--green);
 }
+.themeSwitch
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--black);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeSwitch::before
+{
+    content: '\f186';
+    font-family: fontAwesome;
+    color: var(--white);
+    font-size: 20px;
+}
