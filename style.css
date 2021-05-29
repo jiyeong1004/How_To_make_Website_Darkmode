@@ -248,6 +248,30 @@ header ul li a
     {
         display: none;
     }
+    .navigation.active
+    {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--white);
+        flex-direction: column;
+    }
+    header ul li
+    {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+    header ul li a
+    {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
     .toggle
     {
         position: relative;
@@ -260,5 +284,17 @@ header ul li a
         background-repeat: no-repeat;
         cursor: pointer;
         z-index: 1000;
+    }
+    .toggle.active
+    {
+        background: url(image/close.png);
+        filter: invert(1);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dark .toggle
+    {
+        filter: invert(0);
     }
 }
